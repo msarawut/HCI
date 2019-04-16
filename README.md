@@ -1,10 +1,10 @@
 # HCI
 Hash code indexing
 ###### Read me ######
-We provide code for 4 steps and input data.
-1. Compute cluster member and count member.
-2. Compute cluster probability.
-3. Train model and test.
+We provide code for 4 steps.
+1. Compute cluster member and count member (both modality image and text).
+2. Compute cluster probability (both query and training).
+3. Train model and test (train cross-modat x= image modality, y=text modality).
 4. Evaluate
 	4.1 Computer exhaustive search MAP with hamming distance.
 	4.2 Computer MAP@R R=1 to 50.
