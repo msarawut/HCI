@@ -1,5 +1,5 @@
 # HCI
-Hash code indexing for cross-modal retrieval
+Hash code indexing for cross-modal retrieval 
 ###### Read me ######
 We have provided code for 4 steps on MIRFlickr-SePH dataset.
 1. Compute cluster member and count member (both modality image and text).
