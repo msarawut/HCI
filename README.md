@@ -1,6 +1,6 @@
 # Hash code indexing for cross-modal retrieval 
 ### Read me 
-We have provided code for 4 steps on MIRFlickr-SePH dataset (we employed the SePH hashing method to generate MIRFlickr dataset to binary code).
+We have provided code for 4 steps on MIRFlickr-SePH dataset (we employed the SePH hashing method to generate MIRFlickr dataset to binary code). Please follow the steps to run our method.
 1. Compute cluster member and count member (both modality image and text).
 2. Compute cluster probability (both query and training).
 3. Train model and test (cross-modal including, x= image modality and y=text modality).
