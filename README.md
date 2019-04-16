@@ -1,7 +1,9 @@
 # Hash code indexing for cross-modal retrieval 
 ### Read me 
 We have provided code for 4 steps on MIRFlickr-SePH dataset (we employed the SePH hashing method to generate MIRFlickr dataset to binary code). Please follow the steps to run our method.
+
 ####First, this link for download input files.
+
 https://drive.google.com/drive/folders/19IxJeDAgx8rV7CjlcoUqOtlUEIf3jY21
 
 There are 3 folders, including the input folder, measure folder, and output folder. There are 3 files in the input folder, the first file is full 64-bit, second file is index 8-bit and third file is raw query for training and testing. 
