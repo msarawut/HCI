@@ -1,7 +1,7 @@
 # HCI
 Hash code indexing for cross-modal retrieval
 ###### Read me ######
-We provide code for 4 steps.
+We provide code for 4 steps with MIRFlickr-SePH dataset.
 1. Compute cluster member and count member (both modality image and text).
 2. Compute cluster probability (both query and training).
 3. Train model and test (train cross-modat x= image modality, y=text modality).
@@ -12,4 +12,5 @@ We provide code for 4 steps.
 	(4.4) Computer MAP mixed candidate with ranking and no-ranking.
 5. This link for download input files.
 https://drive.google.com/drive/folders/19IxJeDAgx8rV7CjlcoUqOtlUEIf3jY21
-There are 3 floders. There are input floder, measure floder, and output floder. There are 3 flies in input floder, first full 64-bit, second index 8-bit and third raw query. 
+There are 3 folders, including input folder, measure folder, and output folder. There are 3 flies in input folder, first full 64-bit, second index 8-bit and third raw query for training and testing. 
+### if there are some problem, please don't hesitage to ask Sarawut Markchit smarkchit@gmail.com or Prof. Chih-Yi Chiu cychiu@mail.ncyu.edu.tw
