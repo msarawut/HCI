@@ -1,5 +1,5 @@
 # Hash code indexing for cross-modal retrieval 
-###### Read me ######
+# Read me 
 We have provided code for 4 steps on MIRFlickr-SePH dataset (we employed the SePH hashing method to generate MIRFlickr dataset to binary code).
 1. Compute cluster member and count member (both modality image and text).
 2. Compute cluster probability (both query and training).
@@ -22,4 +22,4 @@ It transformed the given semantic affinities of training data to a probability d
 SePH used any kind of predictive models such as linear ridge regression, logistic regression, or kernel logistic regression as hash functions to learn in each view for projecting the corresponding view-specific features into hash codes. 
 (Z. Lin, G. Ding, J. Han, J. Wang, Cross-view retrieval via probability-based semantics-preserving hashing, IEEE transactions on cybernetics. 2017 Dec;47(12):4342-55.)
 
-### If you have any questions or found any problems, please don't hesitate to ask Sarawut Markchit smarkchit@gmail.com or Prof. Chih-Yi Chiu cychiu@mail.ncyu.edu.tw
+# If you have any questions or found any problems, please don't hesitate to ask Sarawut Markchit smarkchit@gmail.com or Prof. Chih-Yi Chiu cychiu@mail.ncyu.edu.tw
