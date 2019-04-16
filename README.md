@@ -12,8 +12,6 @@ We have provided code for 4 steps on MIRFlickr-SePH dataset.
 5. This link for download input files.
 https://drive.google.com/drive/folders/19IxJeDAgx8rV7CjlcoUqOtlUEIf3jY21
 There are 3 folders, including the input folder, measure folder, and output folder. There are 3 files in the input folder, the first file is full 64-bit, second file is index 8-bit and third file is raw query for training and testing. 
-### If you have any questions or found any problems, please don't hesitate to ask Sarawut Markchit smarkchit@gmail.com or Prof. Chih-Yi Chiu cychiu@mail.ncyu.edu.tw
-
 
 The MIRFlickr dataset is a cross-modal dataset. It has 25000 instances collected from the Flickr website. 
 Each instance consists of an image, associated textual tag, and one or more of 24 predefined semantic labels. 
@@ -23,3 +21,5 @@ Semantics-preserving hashing (SePH) is a cross-modal hasing method.
 It transformed the given semantic affinities of training data to a probability distribution and approximates it with another one in Hamming space, via minimizing their Kullback-Leibler divergence. 
 SePH used any kind of predictive models such as linear ridge regression, logistic regression, or kernel logistic regression as hash functions to learn in each view for projecting the corresponding view-specific features into hash codes. 
 (Z. Lin, G. Ding, J. Han, J. Wang, Cross-view retrieval via probability-based semantics-preserving hashing, IEEE transactions on cybernetics. 2017 Dec;47(12):4342-55.)
+
+### If you have any questions or found any problems, please don't hesitate to ask Sarawut Markchit smarkchit@gmail.com or Prof. Chih-Yi Chiu cychiu@mail.ncyu.edu.tw
