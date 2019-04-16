@@ -10,3 +10,5 @@ We provide code for 4 steps.
 	(4.2) Computer MAP@R R=1 to 50.
 	(4.3) Computer MAP ranking and no-ranking in clusters (We can set how many clusters we want to compute.)
 	(4.4) Computer MAP mixed candidate with ranking and no-ranking.
+This link for download input files.
+https://drive.google.com/drive/folders/19IxJeDAgx8rV7CjlcoUqOtlUEIf3jY21
