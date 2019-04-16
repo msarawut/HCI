@@ -4,7 +4,6 @@ We have provided code for 4 steps on MIRFlickr-SePH dataset (we employed the SeP
 
 First, this link for download input files.
 https://drive.google.com/drive/folders/19IxJeDAgx8rV7CjlcoUqOtlUEIf3jY21
-
 There are 3 folders, including the input folder, measure folder, and output folder. There are 3 files in the input folder, the first file is full 64-bit, second file is index 8-bit and third file is raw query for training and testing. 
 
 1. Compute cluster member and count member (both modality image and text).
