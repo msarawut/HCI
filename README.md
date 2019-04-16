@@ -13,4 +13,4 @@ We provide code for 4 steps with MIRFlickr-SePH dataset.
 5. This link for download input files.
 https://drive.google.com/drive/folders/19IxJeDAgx8rV7CjlcoUqOtlUEIf3jY21
 There are 3 folders, including input folder, measure folder, and output folder. There are 3 flies in input folder, first full 64-bit, second index 8-bit and third raw query for training and testing. 
-### if there are some problem, please don't hesitage to ask Sarawut Markchit smarkchit@gmail.com or Prof. Chih-Yi Chiu cychiu@mail.ncyu.edu.tw
+### if you have a question, please don't hesitage to ask Sarawut Markchit smarkchit@gmail.com or Prof. Chih-Yi Chiu cychiu@mail.ncyu.edu.tw
