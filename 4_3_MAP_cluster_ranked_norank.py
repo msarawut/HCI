@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Apr  4 15:24:27 2018
-@author: wut-pc
-"""
 import numpy as np
 from scipy.spatial.distance import cdist # for compute hamming distance
 import xlrd
@@ -48,9 +43,7 @@ def mAP_cluster(q_i, g_candidate_size,g_candidate_member,g_gnd): ## compute mAP
             count_truth+=1 # index of ground-truth                               
             ap=count_truth/(can_i+1) # compute AP of each answer (can_i+1 index of candidate)
             sum_ap=sum_ap+ap # sum AP for each query
-    if tsum<=g_candidate_size:
-        tsum=tsum
-    elif tsum>g_candidate_size:
+    if tsum>g_candidate_size:
         tsum=g_candidate_size      
     sum_ap=sum_ap/tsum # if ground-truth more than candidate divide by candidate
     tmap=tmap+sum_ap               

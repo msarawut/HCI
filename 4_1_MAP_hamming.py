@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Apr 10 08:32:43 2018
-@author: wut-pc
-"""
 from scipy.spatial.distance import cdist
 import numpy as np
 import xlrd
@@ -38,12 +33,6 @@ for c in range(num_retrieval): # database size
     r_X[c]=rx
         
 
-MAP50_start_time = time()
-        
-gnd = (np.dot(qL_data, rL_data.transpose()) > 0).astype(np.integer) # check ground-truth
-hamming = cdist(q_X, r_X, 'hamming')
-ind_hamming = np.argsort(hamming) #+1
-
 def mAP(g_candidate_size): ## compute mAP # compute mAP
     tmap=0
     for iter in range(query_size):  # query_size -> all_query   
@@ -63,6 +52,12 @@ def mAP(g_candidate_size): ## compute mAP # compute mAP
         tmap=tmap+sum_ap
     tmap=tmap/query_size   
     return tmap
+
+MAP50_start_time = time()
+        
+gnd = (np.dot(qL_data, rL_data.transpose()) > 0).astype(np.integer) # check ground-truth
+hamming = cdist(q_X, r_X, 'hamming')
+ind_hamming = np.argsort(hamming) #+1
 
 print('candidate_size: 50')
 print('map: ', mAP(50))

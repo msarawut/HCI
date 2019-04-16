@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Apr  4 15:24:27 2018
-@author: wut-pc
-"""
 import numpy as np
 import xlrd
 import time
@@ -10,8 +5,8 @@ import time
 start_time = time.time()
 print("--- %s start time ---" % (start_time)) 
 
-cluster_n=256 # 256, 1024, 4096, 16384, 65536 
-cluster_fileName='64b8b_t10k' # 64b8b_t10k or 64b8b_q prob for taining data
+cluster_n=256 # 256, 1024, 4096, 16384 
+cluster_fileName='64b8b_t10k' # training set= 64b8b_t10k or query set=64b8b_q 
 
 if __name__=='__main__':  
     
@@ -31,7 +26,7 @@ if __name__=='__main__':
     result_prob_BX=np.zeros((num_train,cluster_n),dtype=float)
     result_prob_BY=np.zeros((num_train,cluster_n),dtype=float)
      
-    Dot_qL_rL = (np.dot(T_labels_data, R_labels_data.transpose()) > 0).astype(np.integer) #.astype(np.float32)
+    Dot_qL_rL = (np.dot(T_labels_data, R_labels_data.transpose()) > 0).astype(np.integer) 
     groundTruth_countMember=np.zeros((num_train,1),dtype=int)
      
     idxCount_X = np.loadtxt('./output/1_calc_clusterMember/64b8b/clusterCountBX_64b8b.txt', dtype=int) 
@@ -50,11 +45,10 @@ if __name__=='__main__':
         print('t: ', t)
         for sq in range(len(count_gnd[0])):
             temp_BX=R_BX_data[count_gnd[0][sq]].astype(np.integer) 
-            result_prob_BX[t][temp_BX]=result_prob_BX[t][temp_BX].astype(np.float32)+ 1 #(1/len(count_gnd[0])) # = normalize
+            result_prob_BX[t][temp_BX]=result_prob_BX[t][temp_BX].astype(np.float32)+ 1 
             temp_BY =R_BY_data[count_gnd[0][sq]].astype(np.integer)            
-            result_prob_BY[t][temp_BY]=result_prob_BY[t][temp_BY].astype(np.float32)+ 1 #(1/len(count_gnd[0])) #= normalize
+            result_prob_BY[t][temp_BY]=result_prob_BY[t][temp_BY].astype(np.float32)+ 1 
          
-        #print('before result_prob_BX[t]', result_prob_BX[t])
         result_prob_BX[t]=np.divide(result_prob_BX[t],count_mem_X) #normalize
         result_prob_BY[t]=np.divide(result_prob_BY[t],count_mem_Y) #normalize
         

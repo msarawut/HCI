@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Apr  4 15:24:27 2018
-@author: wut-pc
-"""
 import numpy as np
 from scipy.spatial.distance import cdist # for compute hamming distance
 import xlrd
@@ -61,9 +56,7 @@ def c_pr_mAP(query_n,g_candidate_member,g_gnd): ## compute mAP
     tp=count_truth/count_mem # all correct answer divide by candidate size
     tr=count_truth/tsum 
     
-    if tsum<=count_mem:
-            tsum=tsum
-    elif tsum>count_mem:
+    if tsum>count_mem:
             tsum=count_mem      
     sum_ap=sum_ap/tsum # if ground-truth more than candidate divide by candidate
     tmap=tmap+sum_ap

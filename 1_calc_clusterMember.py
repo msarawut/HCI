@@ -1,16 +1,10 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Apr  4 15:24:27 2018
-@author: wut-pc
-"""
 import numpy as np
 import xlrd
 import time
-#import os
-
 start_time = time.time()
 print("--- %s start time ---" % (start_time)) 
-cluster_n=256 # 256, 1024, 4096, 16384, 65536
+cluster_n=256 # 256, 1024, 4096, 16384
+## select bit
 start_p=2 # start at 2
 end_p=10 # if we want 10 type 12
 cluster_fileName='64b8b'
@@ -18,7 +12,7 @@ cluster_fileName='64b8b'
 if __name__=='__main__':  
     
     book = xlrd.open_workbook('./input/SePH_MIR_64b8b.xlsx')   
-    R_BX = book.sheet_by_name('R_BX') # if we had RBX_dec data, or R_BX for binary
+    R_BX = book.sheet_by_name('R_BX')
     R_BY = book.sheet_by_name('R_BY')   
     R_BX_data = np.array([[R_BX.cell_value(r, c) for c in range(R_BX.ncols)] for r in range(R_BX.nrows)])
     R_BY_data = np.array([[R_BY.cell_value(r, c) for c in range(R_BY.ncols)] for r in range(R_BY.nrows)])   
