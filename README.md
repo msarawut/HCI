@@ -17,7 +17,7 @@ The MIRFlickr dataset is a cross-modal dataset. It has 25000 instances collected
 Each instance consists of an image, associated textual tag, and one or more of 24 predefined semantic labels. 
 (M. J. Huiskes, M. S. Lew, The MIR flickr retrieval evaluation, In Proceedings of the 1st ACM international conference on Multimedia information retrieval 2008 Oct 30 (pp. 39-43). ACM.)
 
-Semantics-preserving hashing (SePH) is a cross-modal hasing method. 
+Semantics-preserving hashing (SePH) is a cross-modal hashing method. 
 It transformed the given semantic affinities of training data to a probability distribution and approximates it with another one in Hamming space, via minimizing their Kullback-Leibler divergence. 
 SePH used any kind of predictive models such as linear ridge regression, logistic regression, or kernel logistic regression as hash functions to learn in each view for projecting the corresponding view-specific features into hash codes. 
 (Z. Lin, G. Ding, J. Han, J. Wang, Cross-view retrieval via probability-based semantics-preserving hashing, IEEE transactions on cybernetics. 2017 Dec;47(12):4342-55.)
