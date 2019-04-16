@@ -1,7 +1,7 @@
 # HCI
 Hash code indexing for cross-modal retrieval
 ###### Read me ######
-We provide code for 4 steps with MIRFlickr-SePH dataset.
+We provide code for 4 steps on MIRFlickr-SePH dataset.
 1. Compute cluster member and count member (both modality image and text).
 2. Compute cluster probability (both query and training).
 3. Train model and test (train cross-modat x= image modality, y=text modality).
