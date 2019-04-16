@@ -17,7 +17,6 @@ def reorder(q, r, clusterMember): # input matrix (query, clusterMember)
     g_r = np.array(r)
     g_clusterMember = np.array(clusterMember)
     num_clusterMember = g_clusterMember.shape[0]   
-    #print('num_clusterMember: ', num_clusterMember)
     m_q=np.zeros((1,full_bit),dtype=int)
     c_member_b=np.zeros((num_clusterMember,full_bit),dtype=int)
     
@@ -25,15 +24,12 @@ def reorder(q, r, clusterMember): # input matrix (query, clusterMember)
     for i in range(num_clusterMember): # get data full bit
         c_member_b[i]=g_r[g_clusterMember[i]]
     Hamming_matrix=hamming_distance(m_q,c_member_b)    
-    #print('Hamming_matrix: ', Hamming_matrix)
     m_idx=np.argsort(Hamming_matrix)
     g_clusterMember=g_clusterMember[m_idx]
-    #print('g_clusterMember: ', g_clusterMember)    
     return g_clusterMember
 
 def mAP_cluster(q_i, g_candidate_size,g_candidate_member,g_gnd): ## compute mAP 
     tmap=0
-    #print('q_i= ',q_i)                    
     tsum = np.sum(g_gnd[q_i])
     count_truth=0
     sum_ap=0
@@ -95,7 +91,7 @@ if __name__=='__main__':
     sum_mAP_rank=0
     sum_c_n=0
     #pick candidate    
-    for i in range(num_query): # Input_NN_bucket.shape[0], how many query     
+    for i in range(num_query): #  how many query     
         count_candidate=0         
         c_n=0
         for c in range(c_amount) :
