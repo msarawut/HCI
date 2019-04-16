@@ -12,5 +12,5 @@ We have provided code for 4 steps on MIRFlickr-SePH dataset.
 	(4.4) Computer MAP mixed candidate with ranking and no-ranking.
 5. This link for download input files.
 https://drive.google.com/drive/folders/19IxJeDAgx8rV7CjlcoUqOtlUEIf3jY21
-There are 3 folders, including the input folder, measure folder, and output folder. There are 3 flies in the input folder, first full 64-bit, second index 8-bit and third raw query for training and testing. 
+There are 3 folders, including the input folder, measure folder, and output folder. There are 3 flies in the input folder, the first file is full 64-bit, second file is index 8-bit and third file is raw query for training and testing. 
 ### If you have any questions or found any problems, please don't hesitate to ask Sarawut Markchit smarkchit@gmail.com or Prof. Chih-Yi Chiu cychiu@mail.ncyu.edu.tw
