@@ -1,8 +1,7 @@
 # HCI
-Hash code indexing
+Hash code indexing for cross-modal retrieval
 ###### Read me ######
 We provide code for 4 steps.
-Note that before run a code please create 3 floders input, measure, and output. Then put all input files in input floder.
 1. Compute cluster member and count member (both modality image and text).
 2. Compute cluster probability (both query and training).
 3. Train model and test (train cross-modat x= image modality, y=text modality).
@@ -13,4 +12,4 @@ Note that before run a code please create 3 floders input, measure, and output. 
 	(4.4) Computer MAP mixed candidate with ranking and no-ranking.
 5. This link for download input files.
 https://drive.google.com/drive/folders/19IxJeDAgx8rV7CjlcoUqOtlUEIf3jY21
-There are 3 flies. First flie is full 64-bit. Second file is index bit (example for 8-bit). Thrid file is raw query for traininf and testing.
+There are 3 floders. There are input floder, measure floder, and output floder. There are 3 flies in input floder, first full 64-bit, second index 8-bit and third raw query. 
