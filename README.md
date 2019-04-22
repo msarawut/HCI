@@ -6,7 +6,7 @@ To overcome the barrier of storage and computation, the hashing technique has be
 -- Index Terms : cross-modal hashing, indexing and retrieval, nearest neighbor search.
 
 
-We provid code for 4 steps on MIRFlickr-SePH dataset (we employ the SePH hashing method to generate MIRFlickr dataset to binary code). Please follow the steps to run our method.
+We provide source codes for 4 steps on MIRFlickr-SePH dataset (we employ the SePH hashing method to generate MIRFlickr dataset to binary code). Please follow the steps to run our method.
 
 First, this link for download input files.
 https://drive.google.com/drive/folders/19IxJeDAgx8rV7CjlcoUqOtlUEIf3jY21
