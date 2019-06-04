@@ -23,7 +23,7 @@ There are 3 folders, including the input folder, measure folder, and output fold
 
 The MIRFlickr dataset is a cross-modal dataset. It has 25000 instances collected from the Flickr website. 
 Each instance consists of an image, associated textual tag, and one or more of 24 predefined semantic labels. 
-(M. J. Huiskes, M. S. Lew, The MIR flickr retrieval evaluation, In Proceedings of ACM international conference on Multimedia information retrieval 2008 Oct 30 (pp. 39-43). ACM.)
+(M. J. Huiskes, M. S. Lew, The MIR flickr retrieval evaluation, ACM international conference on Multimedia information retrieval 2008 Oct 30 (pp. 39-43). ACM.)
 
 Semantics-preserving hashing (SePH) is a cross-modal hashing method. 
 It transformed the given semantic affinities of training data to a probability distribution and approximates it with another one in Hamming space, via minimizing their Kullback-Leibler divergence. 
