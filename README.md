@@ -12,7 +12,7 @@ First, this link for download input files.
 https://drive.google.com/drive/folders/19IxJeDAgx8rV7CjlcoUqOtlUEIf3jY21
 There are 3 folders, including the input folder, measure folder, and output folder. There are 3 files in the input folder, the first file is full 64-bit, the second file is index 8-bit and the third file is a raw query for training and testing. 
 
-1. Compute cluster member and count member (create inverted index for both modality image and text).
+1. Compute cluster member and count member (create an inverted index for both modalities image and text).
 2. Compute cluster probability (both query and training).
 3. Train model and test (cross-modal including, x= image modality and y=text modality).
 4. Evaluate modal
